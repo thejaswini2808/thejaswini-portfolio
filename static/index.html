@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CK Thejaswini | Portfolio</title>
+  <meta name="description" content="Portfolio of CK Thejaswini - B.Tech student and aspiring software developer.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#home">CK THEJASWINI</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#activities">Activities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-photo">
+      <img src="/static/photo.jpg" alt="Portrait of CK Thejaswini">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>CK Thejaswini</h1>
+      <p class="role">B.Tech Student &nbsp;|&nbsp; Aspiring Software Developer</p>
+      <p class="hero-sub">Jain University &middot; Currently pursuing 2nd Year</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="/static/resume.pdf" target="_blank" rel="noopener">View resume</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p class="lead">Motivated B.Tech student with an interest in software development, programming and emerging technologies. I am willing to learn new technical skills, explore innovative ideas and apply theoretical knowledge to practical problems. I am seeking internship opportunities to gain industry exposure, enhance my technical abilities and contribute to meaningful projects.</p>
+      <div class="interests">
+        <span>Software Development</span>
+        <span>Web Development</span>
+        <span>Technology &amp; Innovation</span>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <h2>Education</h2>
+      <div class="card narrow">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p>Jain University</p>
+        <p class="muted">Currently pursuing 2nd Year</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Programming Languages</h3><p>Python, Java</p></div>
+        <div class="card"><h3>Web Technologies</h3><p>HTML</p></div>
+        <div class="card"><h3>Frameworks</h3><p>FastAPI</p></div>
+        <div class="card"><h3>Core Skills</h3><p>Problem-solving, logical thinking and basic programming concepts</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <h2>Projects</h2>
+      <div class="card project">
+        <h3>Student Gap Analyser</h3>
+        <p>An academic project focused on identifying students' existing skills, analysing skill gaps and helping them discover suitable learning opportunities. The project aims to support students in improving their technical abilities and preparing for internships and career opportunities.</p>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <h2>Achievements &amp; Activities</h2>
+      <ul class="list">
+        <li>Participated in Smart India Hackathon (SIH).</li>
+        <li>Participated in academic project-based learning activities.</li>
+        <li>Collaborated with team members during problem-solving and ideation activities.</li>
+      </ul>
+      <h3 class="sub">Personal Strengths</h3>
+      <div class="chips">
+        <span>Quick learner</span><span>Problem-solving mindset</span><span>Team collaboration</span>
+        <span>Adaptability</span><span>Willingness to learn</span><span>Creative thinking</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact Me</h2>
+      <p class="lead small">Have an internship opportunity or want to collaborate? Send me a message - it is saved securely by my Python (FastAPI) backend.</p>
+      <form id="contact-form" class="form" novalidate>
+        <label>Name
+          <input type="text" name="name" maxlength="80" required placeholder="Your name">
+        </label>
+        <label>Email
+          <input type="email" name="email" maxlength="120" required placeholder="you@example.com">
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" maxlength="2000" required placeholder="Write your message..."></textarea>
+        </label>
+        <button class="btn" type="submit" id="send-btn">Send message</button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="direct">Or email me directly: <a href="mailto:thejuck28@gmail.com">thejuck28@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> CK Thejaswini</p>
+    <p class="counter">Visitors: <strong id="visit-count">--</strong></p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
